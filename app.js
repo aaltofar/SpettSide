@@ -54,5 +54,7 @@ function motionSwitch() {
 }
 
 function goToElement(element) {
-	document.getElementById(element).scrollIntoView();
+	document.getElementById(element).scrollIntoView({
+		behavior: "smooth",
+	});
 }
