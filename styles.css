@@ -22,8 +22,8 @@
     --facebookBlue: #395797;
     --discordPurple: #7983f5;
     --twitchPurple: #451093;
-    --spettShadow: 3px 3px 1px 1px var(--accent-100);
-    --spettBorder: 2px solid var(--accent-100);
+    --spettShadow: 3px 3px 1px 1px var(--accent-200);
+    --spettBorder: 2px solid var(--accent-200);
 }
 
 body {
@@ -59,7 +59,7 @@ body {
 }
 
 #omOss {
-    background-color: var(--bg-300);
+    background-color: var(--bg-200);
 }
 
 #fordeler {
@@ -99,6 +99,7 @@ body {
     box-shadow: var(--spettShadow);
     -webkit-box-shadow: var(--spettShadow);
     -moz-box-shadow: var(--spettShadow);
+    border: var(--spettBorder);
 }
 
 .textCard {
@@ -174,10 +175,10 @@ section {
     text-align: center;
     text-decoration: none;
     color: #fff;
-    background-color: var(--spettGreyLight);
-    border: 2px solid white;
+    background-color: var(--accent-100);
+    border: var(--spettBorder);
     border-radius: 10px;
-    box-shadow: 5px 5px 0px var(--spettGreyLight);
+    box-shadow: 3px 3px 1px 1px var(--accent-200);
     transition: all 0.3s ease;
 }
 
@@ -280,7 +281,7 @@ a {
 
 .container .card .face.face2 {
     position: relative;
-    background: var(--spettGreyLight);
+    background: var(--primary-100);
     display: flex;
     justify-content: center;
     align-items: center;
