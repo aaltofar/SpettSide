@@ -17,137 +17,134 @@
 		<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
 	</head>
 	<body>
-		<div id="vanta-bg">
-			<div id="header">
-				<div class="headerItem" onclick="goToElement('hvaErSpett')">Hva er Spett?</div>
-				<div class="headerItem" onclick="goToElement('omOss')">Om oss</div>
-				<div class="headerItem" onclick="goToElement('fordeler')">Medlemsfordeler</div>
-				<div id="reduserBevegelighet" class="headerItem" onclick="motionSwitch()">
-					Reduser bevegelighet
-				</div>
+		<div id="header">
+			<div class="headerItem" onclick="goToElement('hvaErSpett')">Hva er Spett?</div>
+			<div class="headerItem" onclick="goToElement('omOss')">Om oss</div>
+			<div class="headerItem" onclick="goToElement('fordeler')">Medlemsfordeler</div>
+			<div id="reduserBevegelighet" class="headerItem" onclick="motionSwitch()">
+				Reduser bevegelighet
 			</div>
-			<section class="hidden">
-				<img class="banner" src="Graphics\sgbanner.png" alt="Spett Gaming banner med logo" />
-			</section>
+		</div>
+		<section class="hidden" id="logoSection">
+			<img class="banner" src="Graphics\sgbanner.png" alt="Spett Gaming banner med logo" />
+		</section>
 
-			<section class="hidden" id="hvaErSpett">
-				<h1>Hva er Spett?</h1>
-				<div class="textCard">
-					<p>
-						I all hovedsak er vi en voksen gjeng likesinnede som har dataspill som hobby. Som så
-						mange andre ønsker vi å bruke hobbyen vår til noe og selve organiseringen skal hjelpe
-						oss å realisere dette. Vi har som mål å kunne forsyne oss selv i form av delte midler,
-						slik som medlemskontingent, sponsede midler og lignende. Med disse midlene kan vi ha
-						egne servere, holde LAN (for medlemmer og andre) og gi støtte til medlemmers
-						spillrelaterte prosjekter (profflag, utvikling, webdesign, foredrag, utdanning etc), all
-						eventuell overskudd utover budsjett ønsker vi å gi tilbake til våre lokalmiljø. Helt
-						konkret har vi et yrende gamingsamfunn, der vi treffes fra fjern og nær og spiller
-						sammen.
-					</p>
-					<p>
-						Vi jobber stadig med flere eventer, blant annet e-sportvisninger på lokale kulturhus,
-						LAN etc. Vi jobber aktivt for å rekruttere flere medlemmer – per nå er vi ca 300
-						stykker. All form for bidrag vil settes stor pris på og vil selvsagt bli kommunisert
-						aktivt og godt ut i kanalene, der det måtte ønskes. Ingenting er for lite. Kontakt oss
-						om du/dere ønsker å bidra.
-					</p>
+		<section class="hidden" id="hvaErSpett">
+			<h1>Hva er Spett?</h1>
+			<div class="textCard">
+				<p>
+					I all hovedsak er vi en voksen gjeng likesinnede som har dataspill som hobby. Som så mange
+					andre ønsker vi å bruke hobbyen vår til noe og selve organiseringen skal hjelpe oss å
+					realisere dette. Vi har som mål å kunne forsyne oss selv i form av delte midler, slik som
+					medlemskontingent, sponsede midler og lignende. Med disse midlene kan vi ha egne servere,
+					holde LAN (for medlemmer og andre) og gi støtte til medlemmers spillrelaterte prosjekter
+					(profflag, utvikling, webdesign, foredrag, utdanning etc), all eventuell overskudd utover
+					budsjett ønsker vi å gi tilbake til våre lokalmiljø. Helt konkret har vi et yrende
+					gamingsamfunn, der vi treffes fra fjern og nær og spiller sammen.
+				</p>
+				<p>
+					Vi jobber stadig med flere eventer, blant annet e-sportvisninger på lokale kulturhus, LAN
+					etc. Vi jobber aktivt for å rekruttere flere medlemmer – per nå er vi ca 300 stykker. All
+					form for bidrag vil settes stor pris på og vil selvsagt bli kommunisert aktivt og godt ut
+					i kanalene, der det måtte ønskes. Ingenting er for lite. Kontakt oss om du/dere ønsker å
+					bidra.
+				</p>
+			</div>
+		</section>
+
+		<section class="hidden" id="omOss">
+			<h1>Om oss</h1>
+			<div class="textCard">
+				<p>
+					Som en frivillighetsorganisasjon får vi også grasrotandel. Klikk her for å tilknytte oss
+					som mottaker av din andel. Følgende står i Spett Gamings vedtekter under paragraf 2,
+					formål: Spett Gamings formål er å være en interesseorganisasjon med dataspill i fokus. Vi
+					jobber for inkludering av spillere som deler like verdier. Vi er opptatt av et positivt
+					miljø blant medlemmene. Spett Gaming samles på mange plattformer, enten i form av
+					spillkvelder over internett, eller LAN over en helg. All eventuell overskudd vil bli gitt
+					til veldedige formål. Målet er å nå så mange som mulig over hele landet. Spett Gaming er
+					en organisasjon for folk over 18 år.
+				</p>
+			</div>
+
+			<div class="ruleContainer hidden staggers">
+				<div class="ruleCard">
+					En Spett Gamer elsker å spille spill. Aller helst sammen med andre.
 				</div>
-			</section>
-
-			<section class="hidden" id="omOss">
-				<h1>Om oss</h1>
-				<div class="textCard">
-					<p>
-						Som en frivillighetsorganisasjon får vi også grasrotandel. Klikk her for å tilknytte oss
-						som mottaker av din andel. Følgende står i Spett Gamings vedtekter under paragraf 2,
-						formål: Spett Gamings formål er å være en interesseorganisasjon med dataspill i fokus.
-						Vi jobber for inkludering av spillere som deler like verdier. Vi er opptatt av et
-						positivt miljø blant medlemmene. Spett Gaming samles på mange plattformer, enten i form
-						av spillkvelder over internett, eller LAN over en helg. All eventuell overskudd vil bli
-						gitt til veldedige formål. Målet er å nå så mange som mulig over hele landet. Spett
-						Gaming er en organisasjon for folk over 18 år.
-					</p>
+				<div class="ruleCard hidden staggers">
+					En Spett Gamer ønsker å ha det gøy når det spilles.
 				</div>
-
-				<div class="ruleContainer hidden staggers">
-					<div class="ruleCard">
-						En Spett Gamer elsker å spille spill. Aller helst sammen med andre.
-					</div>
-					<div class="ruleCard hidden staggers">
-						En Spett Gamer ønsker å ha det gøy når det spilles.
-					</div>
-					<div class="ruleCard hidden staggers">
-						En Spett Gamer ønsker at de som spiller med også har det gøy.
-					</div>
-					<div class="ruleCard hidden staggers">
-						En Spett Gamer er ikke nedlatende, ikke negativ, ikke fordomsfull og ikke bedre enn alle
-						andre.
-					</div>
-					<div class="ruleCard hidden staggers">
-						En Spett Gamer bryr seg om medspillerne sine og bidrar ene og alene til det positive i
-						Spett Gaming.
-					</div>
-					<div class="ruleCard hidden staggers">En Spett Gamer elsker å spille spill.</div>
+				<div class="ruleCard hidden staggers">
+					En Spett Gamer ønsker at de som spiller med også har det gøy.
 				</div>
-			</section>
+				<div class="ruleCard hidden staggers">
+					En Spett Gamer er ikke nedlatende, ikke negativ, ikke fordomsfull og ikke bedre enn alle
+					andre.
+				</div>
+				<div class="ruleCard hidden staggers">
+					En Spett Gamer bryr seg om medspillerne sine og bidrar ene og alene til det positive i
+					Spett Gaming.
+				</div>
+				<div class="ruleCard hidden staggers">En Spett Gamer elsker å spille spill.</div>
+			</div>
+		</section>
 
-			<section class="hidden" id="fordeler">
-				<h1>Medlemsfordeler</h1>
-				<div class="container staggers">
-					<a href="https://www.twitch.tv/team/spettgaming">
-						<div class="card hidden staggers">
-							<div class="face face1">
-								<div class="content">
-									<img src="https://i.ibb.co/WngYsLX/twitch.png" />
-									<h3>Streamteam</h3>
-								</div>
-							</div>
-							<div class="face face2">
-								<div class="content">
-									<p>Vi har et flott streamteam på twitch.tv med flere dedikerte streamere</p>
-								</div>
-							</div>
-						</div>
-					</a>
-
+		<section class="hidden" id="fordeler">
+			<h1>Medlemsfordeler</h1>
+			<div class="container staggers">
+				<a href="https://www.twitch.tv/team/spettgaming">
 					<div class="card hidden staggers">
-						<div class="face face1">
+						<div class="face face1" id="twitchCard">
 							<div class="content">
-								<img src="https://i.ibb.co/qpRM2Fk/discord.png" />
-								<h3>Discord server</h3>
+								<img src="https://i.ibb.co/WngYsLX/twitch.png" />
+								<h3>Streamteam</h3>
 							</div>
 						</div>
 						<div class="face face2">
 							<div class="content">
-								<p>En stor Discord server med for tiden 324 medlemmer</p>
+								<p>Vi har et flott streamteam på twitch.tv med flere dedikerte streamere</p>
 							</div>
 						</div>
 					</div>
-					<a href="https://www.facebook.com/groups/spettgamers">
-						<div class="card hidden staggers">
-							<div class="face face1">
-								<div class="content">
-									<img src="https://i.ibb.co/12PHgWL/facebook.png" />
-									<h3>Facebook gruppe</h3>
-								</div>
-							</div>
-							<div class="face face2">
-								<div class="content">
-									<p>Facebook gruppe hvor en kan stille spørsmål, finne events og bli kjent</p>
-								</div>
+				</a>
+
+				<div class="card hidden staggers">
+					<div class="face face1" id="discordCard">
+						<div class="content">
+							<img src="https://i.ibb.co/qpRM2Fk/discord.png" />
+							<h3>Discord server</h3>
+						</div>
+					</div>
+					<div class="face face2">
+						<div class="content">
+							<p>En stor Discord server med for tiden 324 medlemmer</p>
+						</div>
+					</div>
+				</div>
+				<a href="https://www.facebook.com/groups/spettgamers">
+					<div class="card hidden staggers">
+						<div class="face face1" id="fbCard">
+							<div class="content">
+								<img src="https://i.ibb.co/12PHgWL/facebook.png" />
+								<h3>Facebook gruppe</h3>
 							</div>
 						</div>
-					</a>
-				</div>
-				<p>
-					I skrivende stund har vi 18-årsgrense og alle medlemmer må godkjenne våre
-					<a
-						href="https://docs.google.com/document/d/1LMh4LOjUV9738clhdSSs_SfnNanNeLbQrl8DcIqxkGM/edit"
-						>vedtekter</a
-					>. Vi har høy fokus på spill og trivsel på internett.
-				</p>
-				<button class="comic-button">Bli medlem</button>
-			</section>
-		</div>
+						<div class="face face2">
+							<div class="content">
+								<p>Facebook gruppe hvor en kan stille spørsmål, finne events og bli kjent</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<p>
+				I skrivende stund har vi 18-årsgrense og alle medlemmer må godkjenne våre
+				<a
+					href="https://docs.google.com/document/d/1LMh4LOjUV9738clhdSSs_SfnNanNeLbQrl8DcIqxkGM/edit"
+					>vedtekter</a
+				>. Vi har høyt fokus på spill og trivsel på internett.
+			</p>
+			<button class="comic-button">Bli medlem</button>
+		</section>
 	</body>
 </html>
