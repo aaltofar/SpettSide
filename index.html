@@ -7,6 +7,7 @@
 		<title>Spett Gaming</title>
 		<link rel="icon" type="image/x-icon" href="Graphics\favicon.png" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="socialCards.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -18,10 +19,12 @@
 	</head>
 	<body>
 		<div id="header">
+			<img onclick="goToElement('logoSection')" src="Graphics/logoPopup.png" alt="" />
 			<div class="headerItem" onclick="goToElement('hvaErSpett')">Hva er Spett?</div>
 			<div class="headerItem" onclick="goToElement('omOss')">Om oss</div>
 			<div class="headerItem" onclick="goToElement('fordeler')">Medlemsfordeler</div>
-			<div id="reduserBevegelighet" class="headerItem" onclick="motionSwitch()">
+			<div class="headerItem">Bli medlem</div>
+			<div id="reduserBevegelighet" class="headerItem" onclick="motionSwitch(this)">
 				Reduser bevegelighet
 			</div>
 		</div>
@@ -52,7 +55,7 @@
 			</div>
 		</section>
 
-		<section class="hidden" id="omOss">
+		<section class="hidden staggers" id="omOss">
 			<h1>Om oss</h1>
 			<div class="textCard">
 				<p>
@@ -67,25 +70,39 @@
 				</p>
 			</div>
 
-			<div class="ruleContainer hidden staggers">
-				<div class="ruleCard">
-					En Spett Gamer elsker å spille spill. Aller helst sammen med andre.
+			<div class="ruleContainer staggers">
+				<div class="ruleCard ruleBento2 show">
+					<div class="ruleText">
+						En Spett Gamer elsker å spille spill, aller helst sammen med andre.
+					</div>
+					<img class="ruleBg" src="Graphics/usBg6.jpg" alt="" />
 				</div>
-				<div class="ruleCard hidden staggers">
-					En Spett Gamer ønsker å ha det gøy når det spilles.
+				<div class="ruleCard ruleBento1 show">
+					<div class="ruleText">En Spett Gamer ønsker å ha det gøy når det spilles.</div>
+					<img class="ruleBg" src="Graphics/usBg2.jpg" alt="" />
 				</div>
-				<div class="ruleCard hidden staggers">
-					En Spett Gamer ønsker at de som spiller med også har det gøy.
+				<div class="ruleCard ruleBento1 show">
+					<div class="ruleText">En Spett Gamer ønsker at de som spiller med også har det gøy.</div>
+					<img class="ruleBg" src="Graphics/usBg3.jpg" alt="" />
 				</div>
-				<div class="ruleCard hidden staggers">
-					En Spett Gamer er ikke nedlatende, ikke negativ, ikke fordomsfull og ikke bedre enn alle
-					andre.
+				<div class="ruleCard ruleBento2 show">
+					<div class="ruleText">
+						En Spett Gamer er ikke nedlatende, ikke negativ, ikke fordomsfull og ikke bedre enn alle
+						andre.
+					</div>
+					<img class="ruleBg" src="Graphics/usBg4.jpg" alt="" />
 				</div>
-				<div class="ruleCard hidden staggers">
-					En Spett Gamer bryr seg om medspillerne sine og bidrar ene og alene til det positive i
-					Spett Gaming.
+				<div class="ruleCard ruleBento2 show">
+					<div class="ruleText">
+						En Spett Gamer bryr seg om medspillerne sine og bidrar ene og alene til det positive i
+						Spett Gaming og på internett generelt.
+					</div>
+					<img class="ruleBg" src="Graphics/usBg5.jpg" alt="" />
 				</div>
-				<div class="ruleCard hidden staggers">En Spett Gamer elsker å spille spill.</div>
+				<div class="ruleCard ruleBento1 show">
+					<div class="ruleText">En Spett Gamer elsker å spille spill.</div>
+					<img class="ruleBg" src="Graphics/usBg1.jpg" alt="" />
+				</div>
 			</div>
 		</section>
 
